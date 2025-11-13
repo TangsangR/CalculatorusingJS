@@ -23,4 +23,4 @@ I made some normal visual calculator and it has basic features like normal calul
 
 
 ## Demo
-
+https://tr2calcu.netlify.app/
