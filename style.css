@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap');
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: #90b0e3;
+color: rgb(67, 207, 86);
+ font-family: "Momo Trust Display", sans-serif;
+}
+
+.calculator {
+width: 300px;
+background: #0f172a;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+.display {
+background: #1e293b;
+padding: 15px;
+border-radius: 8px;
+margin-bottom: 15px;
+text-align: right;
+font-size: 24px;
+overflow: hidden;
+}
+.buttons {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 9px;
+}
+button {
+padding: 15px;
+font-size: 18px;
+border: none;
+border-radius: 8px;
+background: #334155;
+color: rgb(238, 185, 185);
+cursor: pointer;
+transition: 0.2s;
+}
+button:hover {
+background: #475569;
+}
+button.equal {
+grid-column: span 2;
+background: #3b82f6;
+color: #fff;
+}
+.history-box {
+      background: #1e293b;
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 6px;
+      max-height: 100px;
+      overflow-y: auto;
+      font-size: 14px;
+      display: none;
+    }
