@@ -3,12 +3,12 @@ let historyBox = document.getElementById('historyBox');
 let history = [];
  //add value to display
 function append(e) {
-    if (display.innerText === '0' || display.innerText === 'Error') //if display is 0 or Error, replace it
+    if (display.innerText === '0' || display.innerText === 'Error') //if display is 0 or Error, just replace it
     {
         display.innerText = e;
     } 
     else {
-        display.innerText += e; //if no 0 or error, add it
+        display.innerText += e; 
     
 }}
 // Clear the display
@@ -29,7 +29,7 @@ function deleteLast() {
         updateHistory();
 }
     catch (e) {
-        display.innerText = 'Error'; //display error when wrong
+        display.innerText = 'Error'; 
       }
     }
 
@@ -45,4 +45,5 @@ function deleteLast() {
       } else {
         historyBox.style.display = 'none';
       }
+
     }
